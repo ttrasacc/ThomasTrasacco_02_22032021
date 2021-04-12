@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Reservia - planifiez vos vacances</title>
+</head>
+
+<body>
+    <header>
+        <div id="site_logo">
+            <img src="resources/images/logo/Reservia.svg" />
+        </div>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#lodging">
+                        <h2>Hébergements</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#activities">
+                        <h2>Activités</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h2 class="blue bold">S'inscrire</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="description">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h3 class="light">En plein centre-ville ou en pleine nature</h3>
+        </div>
+        <div id="research">
+            <div id="localisation">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input type="search" id="search_town" value="Marseille, France" />
+            <button>Rechercher</button>
+        </div>
+    </section>
+    <div>    
+        <div id="filters">
+            <div class="title_filters">
+                <h3>Filtres</h3>
+            </div>
+            <div class="filter">
+                <div class="filter_icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="filter_text">
+                    <h3 class="bold">Économique</h3>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filter_icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <div class="filter_text">
+                    <h3 class="bold">Familial</h3>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filter_icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="filter_text">
+                    <h3 class="bold">Romantique</h3>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="filter_icon">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <div class="filter_text">
+                    <h3 class="bold">Animaux autorisés</h3>
+                </div>
+            </div>
+        </div>
+        <div id="information">
+            <div>
+                <i class="fas fa-info-circle reverse"></i>
+            </div>
+            <div>
+                <h3 class="light">Plus de 500 logments sont disponibles dans cette ville</h3>
+            </div>
+        </div>
+    </div>
+    <div id="main_section">
+        <section id="lodging">
+            <!--hébergement-->
+            <header>
+                <h2>Hébergements à Marseille</h2>
+            </header>
+            <ul>
+                <li>
+                    <div class="lodging_suggestion" onclick="">
+                        <div class="lodging_image" id="id_1"></div>
+                        <div class="lodging_description">
+                            <h2>Auberge La Cannebière</h2>
+                        </div>
+                        <div class="lodging_price">
+                            <h3>Nuit à partir de <span>25€</span></h3>
+                        </div>
+                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="ratings">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lodging_suggestion" onclick="">
+                        <div class="lodging_image" id="id_2"></div>
+                        <div class="lodging_description">
+                            <h2>Auberge La Cannebière</h2>
+                        </div>
+                        <div class="lodging_price">
+                            <h3>Nuit à partir de <span>25€</span></h3>
+                        </div>
+                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="ratings">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lodging_suggestion" onclick="">
+                        <div class="lodging_image" id="id_3"></div>
+                        <div class="lodging_description">
+                            <h2>Auberge La Cannebière</h2>
+                        </div>
+                        <div class="lodging_price">
+                            <h3>Nuit à partir de <span>25€</span></h3>
+                        </div>
+                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="ratings">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lodging_suggestion" onclick="">
+                        <div class="lodging_image" id="id_4"></div>
+                        <div class="lodging_description">
+                            <h2>Auberge La Cannebière</h2>
+                        </div>
+                        <div class="lodging_price">
+                            <h3>Nuit à partir de <span>25€</span></h3>
+                        </div>
+                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="ratings">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lodging_suggestion" onclick="">
+                        <div class="lodging_image" id="id_5"></div>
+                        <div class="lodging_description">
+                            <h2>Auberge La Cannebière</h2>
+                        </div>
+                        <div class="lodging_price">
+                            <h3>Nuit à partir de <span>25€</span></h3>
+                        </div>
+                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="ratings">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lodging_suggestion" onclick="">
+                        <div class="lodging_image" id="id_6"></div>
+                        <div class="lodging_description"><h2>Auberge La Cannebière</h2></div>
+                        <div class="lodging_price"><h3>Nuit à partir de <span>25€</span></h3></div>
+                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="ratings">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="afficher_plus">
+                <a href="">
+                    <h2 class="bold">Afficher plus</h2>
+                </a>
+            </div>
+        </section>
+        <section id="most_popular">
+            <header>
+                <h2>Les plus populaires</h2>
+                <a href=""><img src="" alt="" /></a>
+            </header>
+            <ul>
+                <li>
+                    <div class="popular">
+                        <div class="popular_image" id="id_7"></div>
+                        <div class="popular_text">
+                            <div>
+                                <h2>Hôtel Le soleil du matin</h2>
+                                <h3>Nuit à partir de <span>128€</span></h3>
+                            </div>
+                            <!-- Comment on fait les étoiles de notation ? -->
+                            <div class="popular_ratings">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="popular">
+                        <div class="popular_image" id="id_8"></div>
+                        <div class="popular_text">
+                            <div>
+                                <h2>Au coeur de l'eau Chambre d'hôtes</h2>
+                                <h3>Nuit à partir de <span>71€</span></h3>
+                            </div>
+                            <!-- Comment on fait les étoiles de notation ? -->
+                            <div class="popular_ratings">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="popular">
+                        <div class="popular_image" id="id_9"></div>
+                        <div class="popular_text">
+                            <div>
+                                <h2>Hôtel Tout bleu et Blanc</h2>
+                                <h3>Nuit à partir de <span>68€</span></h3>
+                            </div>
+                            <!-- Comment on fait les étoiles de notation ? -->
+                            <div class="popular_ratings">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <section id="activities">
+        <a name="activities"></a>
+        <header>
+            <h2>Activités à Marseille</h2>
+        </header>
+        <div id="activity_elements">
+            <div class="activity_pattern">
+                <div class="alone">
+                    <div class="activity_suggestion" onclick="">
+                        <div class="alone_image" id="id_10"></div>
+                        <div class="activity_description">
+                            <h2>Vieux Port</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="activity_suggestion" onclick="">
+                        <div class="column_image" id="id_11"></div>
+                        <div class="activity_description">
+                                <h2>Fort de Pomègues</h2>
+                        </div>
+                    </div>
+                    <div class="activity_suggestion" onclick="">
+                        <div class="column_image" id="id_12"></div>
+                        <div class="activity_description">
+                            <h2>Îles du Frioul</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="activity_pattern">
+                <div class="alone">
+                    <div class="activity_suggestion" onclick="">
+                        <div class="alone_image" id="id_13"></div>
+                        <div class="activity_description">
+                            <h2>Parc National des Calanques</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="activity_suggestion" onclick="">
+                        <div class="column_image" id="id_14"></div>
+                        <div class="activity_description">
+                            <h2>Notre-Dame-de-la-Garde</h2>
+                        </div>
+                    </div>
+                    <div class="activity_suggestion" onclick="">
+                        <div class="column_image" id="id_15"></div>
+                        <div class="activity_description">
+                            <h2>Parc Longchamp</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="a_propos">
+            <h2>A propos</h3>
+            <a>
+                <p>Fonctionnement du site</p>
+            </a>
+            <a>
+                <p>Conditions générales de vente</p>
+            </a>
+            <a>
+                <p>Données et confidentialité</p>
+            </a>
+        </section>
+        <section id="nos_hebergements">
+            <h2>Nos hébergements</h2>
+            <a>
+                <p>Charte qualité</p>
+            </a>
+            <a>
+                <p>Soumettre votre hôtel</p>
+            </a>
+        </section>
+        <section id="assistance">
+            <h2>Assistance</h2>
+            <a>
+                <p>Centre d'aide</p>
+            </a>
+            <a>
+                <p>Nous contacter</p>
+            </a>
+        </section>
+    </footer>
+</body>
