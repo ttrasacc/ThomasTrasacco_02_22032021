@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 1278px)" href="screen.css" type="text/css" />
+    <link rel="stylesheet" media="all and (max-width: 1278px)" href="smallScreen.css" type="text/css" />
+    <link rel="stylesheet" media="all and (max-width: 450px)" href="handheld.css" type="text/css" />
     <title>Reservia - planifiez vos vacances</title>
 </head>
 
 <body>
-    <header>
+    <header id="body_header">
         <div id="site_logo">
             <img src="resources/images/logo/Reservia.svg" />
         </div>
@@ -31,7 +34,7 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="research_section">
         <div id="description">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <h3 class="light">En plein centre-ville ou en pleine nature</h3>
@@ -44,60 +47,58 @@
             <button>Rechercher</button>
         </div>
     </section>
-    <div>    
-        <div id="filters">
-            <div class="title_filters">
-                <h3>Filtres</h3>
+    <div id="filters">
+        <div class="title_filters">
+            <h3>Filtres</h3>
+        </div>
+        <div class="filter">
+            <div class="filter_icon">
+                <i class="fas fa-money-bill-wave"></i>
             </div>
-            <div class="filter">
-                <div class="filter_icon">
-                    <i class="fas fa-money-bill-wave"></i>
-                </div>
-                <div class="filter_text">
-                    <h3 class="bold">Économique</h3>
-                </div>
-            </div>
-            <div class="filter">
-                <div class="filter_icon">
-                    <i class="fas fa-child"></i>
-                </div>
-                <div class="filter_text">
-                    <h3 class="bold">Familial</h3>
-                </div>
-            </div>
-            <div class="filter">
-                <div class="filter_icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <div class="filter_text">
-                    <h3 class="bold">Romantique</h3>
-                </div>
-            </div>
-            <div class="filter">
-                <div class="filter_icon">
-                    <i class="fas fa-dog"></i>
-                </div>
-                <div class="filter_text">
-                    <h3 class="bold">Animaux autorisés</h3>
-                </div>
+            <div class="filter_text">
+                <h3 class="bold">Économique</h3>
             </div>
         </div>
-        <div id="information">
-            <div>
-                <i class="fas fa-info-circle reverse"></i>
+        <div class="filter">
+            <div class="filter_icon familial">
+                <i class="fas fa-child"></i>
             </div>
-            <div>
-                <h3 class="light">Plus de 500 logments sont disponibles dans cette ville</h3>
+            <div class="filter_text">
+                <h3 class="bold">Familial</h3>
             </div>
+        </div>
+        <div class="filter">
+            <div class="filter_icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="filter_text">
+                <h3 class="bold">Romantique</h3>
+            </div>
+        </div>
+        <div class="filter">
+            <div class="filter_icon">
+                <i class="fas fa-dog"></i>
+            </div>
+            <div class="filter_text">
+                <h3 class="bold">Animaux autorisés</h3>
+            </div>
+        </div>
+    </div>
+    <div id="information">
+        <div>
+            <i class="fas fa-info-circle reverse"></i>
+        </div>
+        <div>
+            <h3 class="light">Plus de 500 logments sont disponibles dans cette ville</h3>
         </div>
     </div>
     <div id="main_section">
         <section id="lodging">
             <!--hébergement-->
-            <header>
+            <header class="section_header">
                 <h2>Hébergements à Marseille</h2>
             </header>
-            <ul>
+            <ul id="lodging_list">
                 <li>
                     <div class="lodging_suggestion" onclick="">
                         <div class="lodging_image" id="id_1"></div>
@@ -196,11 +197,11 @@
             </div>
         </section>
         <section id="most_popular">
-            <header>
-                <h2>Les plus populaires</h2>
-                <a href=""><img src="" alt="" /></a>
+            <header class="section_header" id="populars_title">
+                <div><h2>Les plus populaires</h2></div>
+                <div class="icon"><i class="fas fa-chart-line"></i></div>
             </header>
-            <ul>
+            <ul id="popular_list">
                 <li>
                     <div class="popular">
                         <div class="popular_image" id="id_7"></div>
@@ -255,7 +256,7 @@
     </div>
     <section id="activities">
         <a name="activities"></a>
-        <header>
+        <header class="section_header">
             <h2>Activités à Marseille</h2>
         </header>
         <div id="activity_elements">
