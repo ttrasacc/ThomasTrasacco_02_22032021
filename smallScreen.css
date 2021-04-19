@@ -73,11 +73,9 @@ img {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
 }
 
 .fifty-fifty {
@@ -275,9 +273,8 @@ a:hover {
 #lodging_list, #popular_list {
     list-style-position: outside;
     list-style-type: none;
-    padding-inline-start: 0px;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    padding-left: 0;
+    margin: 0 0 0 0;
 }
 
 #lodging_list {
