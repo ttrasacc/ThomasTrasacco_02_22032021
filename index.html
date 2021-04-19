@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
+<html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" media="only screen and (min-width: 1278px)" href="screen.css" type="text/css" />
-    <link rel="stylesheet" media="all and (max-width: 1278px)" href="smallScreen.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (min-width: 1024px)" href="screen.css" type="text/css" />
+    <link rel="stylesheet" media="all and (min-width: 451px) and (max-width: 1023px)" href="smallScreen.css" type="text/css" />
     <link rel="stylesheet" media="all and (max-width: 450px)" href="handheld.css" type="text/css" />
     <title>Reservia - planifiez vos vacances</title>
 </head>
@@ -12,26 +12,26 @@
 <body>
     <header id="body_header">
         <div id="site_logo">
-            <img src="resources/images/logo/Reservia.svg" />
+            <img src="resources/images/logo/Reservia.svg" alt="logo du site" />
         </div>
         <nav id="menu">
-            <ul>
-                <li>
-                    <a href="#lodging">
-                        <h2>Hébergements</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#activities">
-                        <h2>Activités</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h2 class="blue bold">S'inscrire</h2>
-                    </a>
-                </li>
-            </ul>
+                <ul id="list_header">
+                    <li class="fifty-fifty">
+                        <a href="#lodging">
+                            <h2>Hébergements</h2>
+                        </a>
+                    </li>
+                    <li class="fifty-fifty">
+                        <a href="#activities">
+                            <h2>Activités</h2>
+                        </a>
+                    </li>
+                </ul>
+            <div id="register">
+                <a href="">
+                    <h2>S'inscrire</h2>
+                </a>
+            </div>
         </nav>
     </header>
     <section id="research_section">
@@ -94,7 +94,6 @@
     </div>
     <div id="main_section">
         <section id="lodging">
-            <!--hébergement-->
             <header class="section_header">
                 <h2>Hébergements à Marseille</h2>
             </header>
@@ -108,7 +107,6 @@
                         <div class="lodging_price">
                             <h3>Nuit à partir de <span>25€</span></h3>
                         </div>
-                        <!-- Comment on fait les étoiles de notation ? -->
                         <div class="ratings">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                         </div>
@@ -118,12 +116,11 @@
                     <div class="lodging_suggestion" onclick="">
                         <div class="lodging_image" id="id_2"></div>
                         <div class="lodging_description">
-                            <h2>Auberge La Cannebière</h2>
+                            <h2>Hôtel du port</h2>
                         </div>
                         <div class="lodging_price">
-                            <h3>Nuit à partir de <span>25€</span></h3>
+                            <h3>Nuit à partir de <span>52€</span></h3>
                         </div>
-                        <!-- Comment on fait les étoiles de notation ? -->
                         <div class="ratings">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i>
@@ -134,12 +131,11 @@
                     <div class="lodging_suggestion" onclick="">
                         <div class="lodging_image" id="id_3"></div>
                         <div class="lodging_description">
-                            <h2>Auberge La Cannebière</h2>
+                            <h2>Hôtel Les mouettes</h2>
                         </div>
                         <div class="lodging_price">
-                            <h3>Nuit à partir de <span>25€</span></h3>
+                            <h3>Nuit à partir de <span>76€</span></h3>
                         </div>
-                        <!-- Comment on fait les étoiles de notation ? -->
                         <div class="ratings">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="far fa-star"></i>
@@ -150,12 +146,11 @@
                     <div class="lodging_suggestion" onclick="">
                         <div class="lodging_image" id="id_4"></div>
                         <div class="lodging_description">
-                            <h2>Auberge La Cannebière</h2>
+                            <h2>Hôtel de la mer</h2>
                         </div>
                         <div class="lodging_price">
-                            <h3>Nuit à partir de <span>25€</span></h3>
+                            <h3>Nuit à partir de <span>46€</span></h3>
                         </div>
-                        <!-- Comment on fait les étoiles de notation ? -->
                         <div class="ratings">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
                                 class="far fa-star"></i>
@@ -166,24 +161,29 @@
                     <div class="lodging_suggestion" onclick="">
                         <div class="lodging_image" id="id_5"></div>
                         <div class="lodging_description">
-                            <h2>Auberge La Cannebière</h2>
+                            <h2>Auberge Le Panier</h2>
                         </div>
                         <div class="lodging_price">
-                            <h3>Nuit à partir de <span>25€</span></h3>
+                            <h3>Nuit à partir de <span>23€</span></h3>
                         </div>
-                        <!-- Comment on fait les étoiles de notation ? -->
                         <div class="ratings">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="lodging_suggestion" onclick="">
                         <div class="lodging_image" id="id_6"></div>
-                        <div class="lodging_description"><h2>Auberge La Cannebière</h2></div>
-                        <div class="lodging_price"><h3>Nuit à partir de <span>25€</span></h3></div>
-                        <!-- Comment on fait les étoiles de notation ? -->
+                        <div class="lodging_description">
+                            <h2>Hôtel chez Amina</h2>
+                        </div>
+                        <div class="lodging_price">
+                            <h3>Nuit à partir de <span>96€</span></h3>
+                        </div>
                         <div class="ratings">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
@@ -210,7 +210,6 @@
                                 <h2>Hôtel Le soleil du matin</h2>
                                 <h3>Nuit à partir de <span>128€</span></h3>
                             </div>
-                            <!-- Comment on fait les étoiles de notation ? -->
                             <div class="popular_ratings">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                     class="fas fa-star"></i>
@@ -226,7 +225,6 @@
                                 <h2>Au coeur de l'eau Chambre d'hôtes</h2>
                                 <h3>Nuit à partir de <span>71€</span></h3>
                             </div>
-                            <!-- Comment on fait les étoiles de notation ? -->
                             <div class="popular_ratings">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                     class="far fa-star"></i>
@@ -243,7 +241,6 @@
                                 <h2>Hôtel Tout bleu et Blanc</h2>
                                 <h3>Nuit à partir de <span>68€</span></h3>
                             </div>
-                            <!-- Comment on fait les étoiles de notation ? -->
                             <div class="popular_ratings">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                     class="far fa-star"></i>
@@ -255,7 +252,6 @@
         </section>
     </div>
     <section id="activities">
-        <a name="activities"></a>
         <header class="section_header">
             <h2>Activités à Marseille</h2>
         </header>
@@ -312,7 +308,7 @@
     </section>
     <footer>
         <section id="a_propos">
-            <h2>A propos</h3>
+            <h2>A propos</h2>
             <a>
                 <p>Fonctionnement du site</p>
             </a>
@@ -343,3 +339,4 @@
         </section>
     </footer>
 </body>
+</html>

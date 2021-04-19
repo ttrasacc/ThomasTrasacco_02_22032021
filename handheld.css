@@ -7,7 +7,7 @@
     font-family: 'Raleway';
     src: url('resources/fonts/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");;
     font-weight: 100 1000;
-    font-stretch: 25% 151%;
+    font-stretch: normal;
     font-style: normal;
 }
 
@@ -53,16 +53,43 @@ img {
 ** ------------- HEADER -------------
 */ 
 
-#body_header {
+/* #body_header {
     display: flex;
     justify-content: space-between;
     height: 10%;
     width:90%;
+} */
+
+#menu {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-body header nav{
-    margin-top: -20px;
+#list_header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
+
+.fifty-fifty {
+    width: 50%;
+}
+
+#register {
+    position: absolute;
+    right: 5%;
+    top: 10px;
+}
+
+#register h2 {
+    color:#0065fc;
+}
+
 li {
     list-style: none;
 }
@@ -74,25 +101,25 @@ a {
 
 a:hover {
     color: #0065fc;
+    
 }
 
 #menu li {
-    float: left;
-    margin-right: 30px;
     text-align: center;
 }
 
 #menu ul li {
     text-decoration: none;
-    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 #menu ul li:hover {
-    border-top: medium solid #0065fc;
+    border-bottom: medium solid #0065fc;
 }
 
 #menu ul li a:hover {
     color: #0065fc;
+    cursor: pointer;
 }
 
 /*
@@ -300,6 +327,7 @@ a:hover {
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin-top: 1%;
 }
 
@@ -349,6 +377,7 @@ a:hover {
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 1%;
 
 }
