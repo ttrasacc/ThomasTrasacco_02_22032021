@@ -10,23 +10,28 @@
 </head>
 
 <body>
+<div id="page">
     <header id="body_header">
         <div id="site_logo">
             <img src="resources/images/logo/Reservia.svg" alt="logo du site" />
         </div>
         <nav id="menu">
-                <ul id="list_header">
-                    <li class="fifty-fifty">
+            <ul id="list_header">
+                <li class="fifty-fifty">
+                    <div class="border-top">
                         <a href="#lodging">
                             <h2>Hébergements</h2>
                         </a>
-                    </li>
-                    <li class="fifty-fifty">
+                    </div>
+                </li>
+                <li class="fifty-fifty">
+                    <div class="border-top">
                         <a href="#activities">
                             <h2>Activités</h2>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </li>
+            </ul>
             <div id="register">
                 <a href="">
                     <h2>S'inscrire</h2>
@@ -108,7 +113,7 @@
                             <h3>Nuit à partir de <span>25€</span></h3>
                         </div>
                         <div class="ratings">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
                         </div>
                     </div>
                 </li>
@@ -138,7 +143,7 @@
                         </div>
                         <div class="ratings">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="far fa-star"></i>
+                                class="fas fa-star empty-star"></i>
                         </div>
                     </div>
                 </li>
@@ -152,8 +157,8 @@
                             <h3>Nuit à partir de <span>46€</span></h3>
                         </div>
                         <div class="ratings">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
-                                class="far fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i
+                                class="fas fa-star empty-star"></i>
                         </div>
                     </div>
                 </li>
@@ -167,11 +172,7 @@
                             <h3>Nuit à partir de <span>23€</span></h3>
                         </div>
                         <div class="ratings">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
                         </div>
                     </div>
                 </li>
@@ -226,8 +227,7 @@
                                 <h3>Nuit à partir de <span>71€</span></h3>
                             </div>
                             <div class="popular_ratings">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="far fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
                             </div>
                         </div>
 
@@ -242,8 +242,7 @@
                                 <h3>Nuit à partir de <span>68€</span></h3>
                             </div>
                             <div class="popular_ratings">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="far fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
                             </div>
                         </div>
                     </div>
@@ -256,52 +255,40 @@
             <h2>Activités à Marseille</h2>
         </header>
         <div id="activity_elements">
-            <div class="activity_pattern">
-                <div class="alone">
-                    <div class="activity_suggestion" onclick="">
-                        <div class="alone_image" id="id_10"></div>
-                        <div class="activity_description">
-                            <h2>Vieux Port</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="activity_suggestion" onclick="">
-                        <div class="column_image" id="id_11"></div>
-                        <div class="activity_description">
-                                <h2>Fort de Pomègues</h2>
-                        </div>
-                    </div>
-                    <div class="activity_suggestion" onclick="">
-                        <div class="column_image" id="id_12"></div>
-                        <div class="activity_description">
-                            <h2>Îles du Frioul</h2>
-                        </div>
-                    </div>
+            <div id="act1" class="activity_suggestion" onclick="">
+                <div class="alone_image" id="id_10"></div>
+                <div class="activity_description">
+                    <h2>Vieux Port</h2>
                 </div>
             </div>
-                <div class="activity_pattern">
-                <div class="alone">
-                    <div class="activity_suggestion" onclick="">
-                        <div class="alone_image" id="id_13"></div>
-                        <div class="activity_description">
-                            <h2>Parc National des Calanques</h2>
-                        </div>
-                    </div>
+            <div id="act2" class="activity_suggestion" onclick="">
+                <div class="column_image" id="id_11"></div>
+                <div class="activity_description">
+                        <h2>Fort de Pomègues</h2>
                 </div>
-                <div class="column">
-                    <div class="activity_suggestion" onclick="">
-                        <div class="column_image" id="id_14"></div>
-                        <div class="activity_description">
-                            <h2>Notre-Dame-de-la-Garde</h2>
-                        </div>
-                    </div>
-                    <div class="activity_suggestion" onclick="">
-                        <div class="column_image" id="id_15"></div>
-                        <div class="activity_description">
-                            <h2>Parc Longchamp</h2>
-                        </div>
-                    </div>
+            </div>
+            <div id="act3" class="activity_suggestion" onclick="">
+                <div class="column_image" id="id_12"></div>
+                <div class="activity_description">
+                    <h2>Îles du Frioul</h2>
+                </div>
+            </div>
+            <div id="act4" class="activity_suggestion" onclick="">
+                <div class="alone_image" id="id_13"></div>
+                <div class="activity_description">
+                    <h2>Parc National des Calanques</h2>
+                </div>
+            </div>
+            <div id="act5" class="activity_suggestion" onclick="">
+                <div class="column_image" id="id_14"></div>
+                <div class="activity_description">
+                    <h2>Notre-Dame-de-la-Garde</h2>
+                </div>
+            </div>
+            <div id="act6" class="activity_suggestion" onclick="">
+                <div class="column_image" id="id_15"></div>
+                <div class="activity_description">
+                    <h2>Parc Longchamp</h2>
                 </div>
             </div>
         </div>
@@ -338,5 +325,6 @@
             </a>
         </section>
     </footer>
+</div>
 </body>
 </html>

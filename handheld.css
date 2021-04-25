@@ -76,6 +76,7 @@ img {
 
 .fifty-fifty {
     width: 50%;
+    border-bottom: 3px solid #f2f2f2;
 }
 
 #register {
@@ -108,7 +109,6 @@ a:hover {
 
 #menu ul li {
     text-decoration: none;
-    border-bottom: 2px solid transparent;
 }
 
 #menu ul li:hover {
@@ -519,5 +519,5 @@ footer {
     flex-direction: column;
     background-color: #f2f2f2;
     height: 100%;
-    width:95%;
+    width:100%;
 }
