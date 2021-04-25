@@ -390,6 +390,10 @@ a:hover {
     text-align:justify;
 }
 
+.empty-star {
+    color: #e1e1e1;
+}
+
 /*
 ** ---------- IMAGES ----------
 */
